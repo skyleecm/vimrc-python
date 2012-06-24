@@ -1,0 +1,10 @@
+My .vimrc file created based on Martin 's talk "Vim as a Python IDE": https://github.com/mbrochh/vim-as-a-python-ide
+
+It uses Vundle to manage plugins.
+
+
+I made a modification to the python-mode plugin, python-mode/autoload/pymode/doc.vim to fix an error.
+
+On line 13, I changed it to:
+         py vim.current.buffer.append(out.encode('utf8').split('\n'), 0)
+
